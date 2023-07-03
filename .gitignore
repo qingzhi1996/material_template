@@ -1,0 +1,10 @@
+.idea
+node_modules
+yarn-error.log
+.env
+.env.production
+.history
+.package-lock.json
+src
+.vscode
+dist

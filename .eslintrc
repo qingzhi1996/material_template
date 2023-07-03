@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "react", "react-hooks"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-use-before-define": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off",
+    "react/display-name": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/ban-ts-comment": 0
+  },
+  "globals": {
+    "fetch": false
+  }
+}
