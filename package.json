@@ -1,6 +1,6 @@
 {
   "name": "material_template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create Material",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js",
