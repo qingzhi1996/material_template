@@ -1,28 +1,27 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "noImplicitAny": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop":true,
-    "target": "esnext",
-    "jsx": "react",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
     "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "types": [
-      "node",
-      "webpack-env"
-    ],
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "baseUrl": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "src/*"
+      ]
     }
   },
-  "include": [
-    "src"
-   ]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
